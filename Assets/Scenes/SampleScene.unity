@@ -861,7 +861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &18711114
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24385,6 +24385,7 @@ GameObject:
   - component: {fileID: 520908461}
   - component: {fileID: 520908463}
   - component: {fileID: 520908462}
+  - component: {fileID: 520908464}
   m_Layer: 0
   m_Name: hitBox
   m_TagString: Untagged
@@ -24439,6 +24440,18 @@ MonoBehaviour:
   trigger: {fileID: 520908462}
   damagePercentage: 100
   triggerType: 3
+--- !u!114 &520908464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520908460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecd1dfd8ba2bb94fa4aeaaa20725eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &522318220
 GameObject:
   m_ObjectHideFlags: 0
@@ -32152,7 +32165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openCloseEvents: 0
   openCloseWindow: 1
-  selectedToolbar: 0
+  selectedToolbar: 3
   _isDead: 0
   _currentHealth: 0
   maxHealth: 100
@@ -32205,9 +32218,9 @@ MonoBehaviour:
   freeSpeed:
     rotationSpeed: 10
     walkByDefault: 0
-    walkSpeed: 2
-    runningSpeed: 3
-    sprintSpeed: 4
+    walkSpeed: 3
+    runningSpeed: 5
+    sprintSpeed: 5
     crouchSpeed: 2
   strafeSpeed:
     rotationSpeed: 10

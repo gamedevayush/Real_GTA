@@ -34,6 +34,10 @@ namespace Invector.vMelee
                 // initialize hitBox properties
                 foreach (vHitBox hitBox in hitBoxes)
                 {
+                    if (hitBox == null) {
+                        
+                        return;
+                    }
                     hitBox.attackObject = this;
                     targetColliders.Add(hitBox, new List<GameObject>());
                 }
@@ -54,6 +58,9 @@ namespace Invector.vMelee
             for (int i = 0; i < hitBoxes.Count; i++)
             {
                 var hitCollider = hitBoxes[i];
+                if (hitCollider == null) {
+                    return;
+                }
                 hitCollider.trigger.enabled = value;
                 if (value == false && targetColliders != null)
                     targetColliders[hitCollider].Clear();

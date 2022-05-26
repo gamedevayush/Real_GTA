@@ -16,7 +16,7 @@ MonoBehaviour:
   tpCameraStates:
   - Name: Default
     forward: -1
-    right: 0.25
+    right: 0
     defaultDistance: 8.25
     maxDistance: 12
     minDistance: 0.6
